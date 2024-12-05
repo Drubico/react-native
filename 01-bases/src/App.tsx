@@ -1,10 +1,10 @@
 // import { BasicTypes } from "./typescript/BasicTypes";
 // import { ObjectLiterals } from "./typescript/ObjectLiterals";
 // import { BasicFuncions } from "./typescript/BasicFunctions";
-
-import { Counter } from "./components/Counter";
-import { LoginPage } from "./components/LoginPage";
-import { UsersPage } from "./components/UsersPage";
+// import { Counter } from "./components/Counter";
+// import { LoginPage } from "./components/LoginPage";
+// import { UsersPage } from "./components/UsersPage";
+import { FormPage } from "./components/FormPage";
 import { AuthProvider } from "./context/AuthContext";
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
 				{/* <BasicFuncions /> */}
 				{/* <Counter /> */}
 				{/* <LoginPage /> */}
-				<UsersPage />
+				{/* <UsersPage /> */}
+				<FormPage />
 			</div>
 		</AuthProvider>
 	);

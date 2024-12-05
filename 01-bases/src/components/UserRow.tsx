@@ -1,15 +1,19 @@
-import React from "react";
+import { User } from "../interfaces/reqres.response";
 
-export const UserRow = () => {
+interface Props {
+	user: User;
+}
+
+export const UserRow = ({ user }: Props) => {
 	return (
 		<tr className="p-2">
 			<td>
-				<img src="https://fastly.picsum.photos/id/238/200/300.jpg?hmac=WF3u-tnO4aoQvz_F9p7zS0Dr5LwGx74tPabQf7EjHkw" alt="avatar" className="w-10 h-10 rounded-full" />
+				<img src={user.avatar} alt="avatar" className="m-2 w-10 h-10 rounded-full" />
 			</td>
 			<td>
-				{"Fernando"} {"Herrera"}
+				{user.first_name} {user.last_name}
 			</td>
-			<td>{"fernando@google.com"}</td>
+			<td>{user.email}</td>
 		</tr>
 	);
 };

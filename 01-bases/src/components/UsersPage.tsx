@@ -1,6 +1,11 @@
 import { UserRow } from "./UserRow";
+import { useUsers } from "../hooks/useUsers";
+
+//https://reqres.in/api/users?page=2
 
 export const UsersPage = () => {
+	const { users } = useUsers();
+	console.table(users);
 	return (
 		<>
 			<div>UsersPage</div>
